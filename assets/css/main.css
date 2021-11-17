@@ -39,11 +39,9 @@ h5 {
 }
 
 .main-content {
-    max-height: 980px;
+    width: 100%;
+    height: 980px;
     background-image: url("../../assets/img/backgrounds/background-section1.png");
-    background-size: cover;
-    background-position: center;
-    zoom: 1;
 }
 
 .main-content__body {
@@ -78,11 +76,9 @@ h5 {
 }
 
 .main-content__statistic {
-    max-height: 980px;
+    width: 100%;
+    height: 980px;
     background-image: url("../../assets/img/backgrounds/background-section2.png");
-    background-size: cover;
-    background-position: center;
-    zoom: 1.01;
 }
 
 .main-content__statistic-body {
@@ -170,9 +166,9 @@ h5 {
 }
 
 .main-content__game {
+    width: 100%;
+    height: 980px;
     background-image: url("../../assets/img/backgrounds/background-section-3-2.png");
-    background-size: cover;
-    background-position: center;
 }
 
 .main-content__game-body {
@@ -194,7 +190,25 @@ h5 {
 }
 
 .motorcycle_pvc_listing {
+    position: relative;
     padding: 2rem;
+}
+
+.buttons #prev {
+    top: 520px;
+    position: absolute;
+    left: 600px;
+}
+
+.buttons #prev>img,
+.buttons #next>img {
+    height: 50px;
+}
+
+.buttons #next {
+    top: 520px;
+    position: absolute;
+    right: 600px;
 }
 
 .main-content__game-pvp {
@@ -203,7 +217,7 @@ h5 {
 
 .slide-pvp {
     margin: auto;
-    max-width: 1200px;
+    max-width: 900px;
 }
 
 .slider-pvp-img {
@@ -296,10 +310,11 @@ h5 {
 .team-content-title>img {
     width: 30%;
     height: 60px;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
 }
 
 .main-content__footer {
+    justify-content: space-around;
     background-image: url("../../assets/img/backgrounds/bg-footer.png");
     background-size: cover;
     min-height: 1200px;
@@ -339,4 +354,453 @@ h5 {
     width: 300px;
     height: 100px;
     background-color: white;
+}
+
+.button-next,
+.button-prev {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.button-next>img,
+.button-prev>img {
+    transition: transform .3s;
+    height: 100px;
+}
+
+.button-next>img:hover,
+.button-prev>img:hover {
+    transform: scale(1.2);
+}
+
+.button-next {
+    position: absolute;
+    top: 150px;
+    right: -150px;
+}
+
+.button-prev {
+    position: absolute;
+    top: 150px;
+    left: -150px;
+}
+
+.main-content__game-pvp-title {
+    margin: auto;
+    max-width: 600px;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.main-content__game-pvp-title>img {
+    width: 100%;
+    height: 100px;
+}
+
+#carousel {
+    position: relative;
+    height: 600px;
+    top: 50%;
+    overflow: hidden;
+}
+
+#carousel div {
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 1;
+}
+
+#carousel div img {
+    width: 400px;
+    transition: width 1s;
+}
+
+#carousel div.hideLeft {
+    left: 0%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+}
+
+#carousel div.hideLeft img {
+    width: 200px;
+}
+
+#carousel div.hideRight {
+    left: 100%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+}
+
+#carousel div.hideRight img {
+    width: 200px;
+}
+
+#carousel div.prev {
+    z-index: 5;
+    left: 30%;
+    transform: translateY(50px) translateX(-50%);
+}
+
+#carousel div.prev img {
+    width: 300px;
+}
+
+#carousel div.prevLeftSecond {
+    z-index: 4;
+    left: 15%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+}
+
+#carousel div.prevLeftSecond img {
+    width: 200px;
+}
+
+#carousel div.selected {
+    z-index: 10;
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+}
+
+#carousel div.next {
+    z-index: 5;
+    left: 70%;
+    transform: translateY(50px) translateX(-50%);
+}
+
+#carousel div.next img {
+    width: 300px;
+}
+
+#carousel div.nextRightSecond {
+    z-index: 4;
+    left: 85%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+}
+
+#carousel div.nextRightSecond img {
+    width: 200px;
+}
+
+@media only screen and (max-width: 1380px) {
+    .main-content {
+        height: 650px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .main-content__statistic {
+        height: 650px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .main-content__game {
+        height: 650px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .team-content-body {
+        min-height: 425px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .main-content__footer {
+        min-height: 705px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .body__logo>img {
+        height: 210px;
+    }
+    .body__title>img {
+        height: 35px;
+    }
+    .body__play>a>img {
+        height: 80px;
+    }
+    .main-content__statistic-body {
+        padding-top: 40px;
+        max-width: 800px;
+    }
+    .statistic__title>img {
+        width: 100%;
+    }
+    .statistic-card__sign>img {
+        height: 380px;
+    }
+    .results-1>img,
+    .results-2>img,
+    .results-3>img,
+    .results-4>img {
+        height: 110px;
+    }
+    .font-statistic {
+        font-size: 1.8rem;
+    }
+    .main-content__game-body {
+        padding-top: 300px;
+    }
+    #carousel .selected>img {
+        width: 300px;
+    }
+    #carousel div.next>img {
+        width: 225px;
+    }
+    #carousel div.hideRight>img {
+        width: 150px;
+    }
+    #carousel div.nextRightSecond>img {
+        width: 150px;
+    }
+    #carousel div.prev>img {
+        width: 225px;
+    }
+    #carousel div.hideLeft>img {
+        width: 150px;
+    }
+    #carousel div.prevLeftSecond>img {
+        width: 150px;
+    }
+    #carousel {
+        height: 420px;
+    }
+    .buttons #prev {
+        top: 385px;
+        left: 380px;
+    }
+    .buttons #next {
+        top: 385px;
+        right: 380px;
+    }
+    .main-content__game-pvp {
+        padding-top: 250px
+    }
+    .team-image {
+        padding: 2rem;
+        max-width: 650px;
+        margin-right: 40px;
+        height: 350px;
+    }
+    .person-image>img {
+        height: 120px;
+    }
+    .footer-logo>img {
+        height: 165px;
+    }
+    .footer-download {
+        padding-top: 0.5rem;
+    }
+    .footer-download>img {
+        height: 60px;
+    }
+    .footer-partners>.partners {
+        width: 185px;
+        height: 60px;
+    }
+}
+
+@media only screen and (max-width: 485px) {
+    .main-content {
+        height: 226px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .main-content__statistic {
+        height: 226px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .main-content__game {
+        height: 226px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .main-content__body {
+        max-width: 240px;
+        margin: auto;
+        row-gap: 0rem;
+    }
+    .body__logo>img {
+        height: 80px;
+    }
+    .body__title>img {
+        height: 20px;
+    }
+    .body__play>a>img {
+        height: 35px;
+    }
+    .main-content__statistic-body {
+        max-width: 240px;
+        margin: auto;
+        padding-top: 0px;
+    }
+    .statistic__title {
+        padding-top: 2rem;
+        padding-bottom: 0rem;
+    }
+    .statistic-card {
+        padding-top: 1rem;
+    }
+    .statistic-card__sign>img {
+        height: 120px;
+    }
+    .statistic-card__results-content {
+        padding-bottom: 0.4rem;
+        gap: 1rem;
+        margin-left: 0px;
+    }
+    .results-1>img,
+    .results-2>img,
+    .results-3>img,
+    .results-4>img {
+        height: 35px;
+    }
+    .results-1>h1,
+    .results-2>h1,
+    .results-3>h1,
+    .results-4>h1 {
+        position: absolute;
+        top: 6px;
+        right: 15px;
+    }
+    .font-statistic {
+        font-size: 0.7rem;
+    }
+    .main-content__game-body {
+        padding-top: 95px;
+    }
+    .main-content__game-title {
+        margin: auto;
+        max-width: 300px;
+        padding-bottom: 2rem;
+    }
+    #carousel .selected>img {
+        width: 105px;
+    }
+    #carousel div.next>img {
+        width: 80px;
+    }
+    #carousel div.hideRight>img {
+        width: 50px;
+    }
+    #carousel div.nextRightSecond>img {
+        width: 50px;
+    }
+    #carousel div.prev>img {
+        width: 80px;
+    }
+    #carousel div.hideLeft>img {
+        width: 50px;
+    }
+    #carousel div.prevLeftSecond>img {
+        width: 50px;
+    }
+    #carousel {
+        width: 345px;
+        height: 200px;
+        margin: auto;
+    }
+    .buttons #prev {
+        top: 160px;
+        left: 145px;
+    }
+    .buttons #next {
+        top: 160px;
+        right: 145px;
+    }
+    .buttons #prev>img,
+    .buttons #next>img {
+        height: 25px;
+    }
+    .motorcycle_pvc_listing {
+        padding: 0rem;
+    }
+    .main-content__game-pvp {
+        padding-top: 135px;
+    }
+    .main-content__game-pvp-title {
+        max-width: 300px;
+        margin: auto;
+    }
+    .main-content__game-pvp-title>img {
+        height: 40px;
+    }
+    .slide-pvp {
+        max-width: 280px;
+        margin: auto;
+    }
+    .button-next>img,
+    .button-prev>img {
+        height: 35px;
+    }
+    .button-prev {
+        top: 50px;
+        left: -45px;
+    }
+    .button-next {
+        top: 50px;
+        right: -45px;
+    }
+    .slider-pvp-nav {
+        height: 20px;
+    }
+    .token-map {
+        width: 100%;
+    }
+    .team-content-title>img {
+        width: 50%;
+        height: 20px;
+        padding-bottom: 2rem;
+    }
+    .team-content-body {
+        min-height: 240px;
+        background-size: cover;
+    }
+    .team-image {
+        gap: 0px;
+        max-width: none;
+        margin-left: 70px;
+        height: 200px;
+        grid-template-columns: repeat(3, 100px);
+    }
+    .team-content-body {
+        display: block;
+    }
+    .team-person {
+        width: 60px;
+    }
+    .person-image>img {
+        height: 35px;
+    }
+    .person-name>h1 {
+        font-size: 15px;
+    }
+    .main-content__footer {
+        min-height: 400px;
+    }
+    .footer-logo {
+        padding-top: 1rem;
+    }
+    .footer-logo>img {
+        height: 50px;
+    }
+    .footer-download>img {
+        height: 25px;
+    }
+    .footer-partners {
+        padding-top: 2rem;
+    }
+    .footer-partners>.partners {
+        width: 60px;
+        height: 25px;
+    }
+    .footer-download>img {
+        height: 25px;
+    }
+    .main-content__footer {
+        min-height: 250px;
+    }
+    .main-content__tokens {
+        padding-top: 3rem;
+    }
 }

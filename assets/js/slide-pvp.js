@@ -8,6 +8,8 @@ $('.slider-single').slick({
     useTransform: true,
     speed: 400,
     cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
+    nextArrow: '<button class="button-next"><img src="assets/img/elements/slide-pvp/seta_dir.png"></button>',
+    prevArrow: '<button class="button-prev"><img src="assets/img/elements/slide-pvp/seta_esq.png"></button>'
 });
 
 $('.slider-nav')
@@ -33,12 +35,14 @@ $('.slider-nav')
                 slidesToScroll: 4,
             }
         }, {
-            breakpoint: 420,
+            breakpoint: 480,
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 3,
             }
-        }]
+        }],
+        nextArrow: '<button class="button-next"><img src="assets/img/elements/slide-pvp/seta_dir.png"></button>',
+        prevArrow: '<button class="button-prev"><img src="assets/img/elements/slide-pvp/seta_esq.png"></button>'
     });
 
 $('.slider-single').on('afterChange', function(event, slick, currentSlide) {
