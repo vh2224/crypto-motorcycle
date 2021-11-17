@@ -1,0 +1,342 @@
+.contract {
+    padding: 0.8rem;
+    text-align: center;
+    background-color: #F2E313
+}
+
+body {
+    margin: auto;
+    padding: 0px;
+}
+
+header {
+    padding: 0px;
+    margin: 0px;
+}
+
+#cmc-token {
+    color: #000000;
+}
+
+#cmc-token:hover {
+    color: #0A46BF;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    padding: 0px;
+    margin: 0px;
+}
+
+.font-title {
+    font-family: 'Rustica', sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.main-content {
+    max-height: 980px;
+    background-image: url("../../assets/img/backgrounds/background-section1.png");
+    background-size: cover;
+    background-position: center;
+    zoom: 1;
+}
+
+.main-content__body {
+    padding-top: 1vh;
+    margin: auto;
+    align-items: center;
+    max-width: 1900px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding-bottom: 400px;
+}
+
+.body__logo>img {
+    width: 100%;
+    height: 300px;
+}
+
+.body__title>img {
+    width: 100%;
+    height: 50px;
+}
+
+.body__play>a>img {
+    width: 100%;
+    height: 90px;
+    transition: transform .3s;
+}
+
+.body__play>a>img:hover {
+    transform: scale(1.3);
+}
+
+.main-content__statistic {
+    max-height: 980px;
+    background-image: url("../../assets/img/backgrounds/background-section2.png");
+    background-size: cover;
+    background-position: center;
+    zoom: 1.01;
+}
+
+.main-content__statistic-body {
+    padding-top: 150px;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.statistic__title {
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 6rem;
+}
+
+.statistic__title>img {
+    width: 60%;
+}
+
+.statistic-card {
+    display: flex;
+    flex-direction: row;
+    padding-top: 3rem;
+    justify-content: space-evenly;
+}
+
+.statistic-card__sign>img {
+    width: 100%;
+    height: 500px;
+}
+
+.statistic-card__results {
+    display: flex;
+    flex-direction: column;
+}
+
+.statistic-card__results-content {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1.2rem;
+    gap: 2rem;
+}
+
+.results-1>img {
+    width: 100%;
+    height: 150px;
+}
+
+.results-2>img {
+    width: 100%;
+    height: 150px;
+}
+
+.results-3>img {
+    width: 100%;
+    height: 150px;
+}
+
+.results-4>img {
+    width: 100%;
+    height: 150px;
+}
+
+.results-1,
+.results-2,
+.results-3,
+.results-4 {
+    position: relative;
+}
+
+.results-1>h1,
+.results-2>h1,
+.results-3>h1,
+.results-4>h1 {
+    position: absolute;
+    top: 20px;
+    right: 50px
+}
+
+.font-statistic {
+    font-size: 3rem;
+    font-family: 'Poppins', Helvetica, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    color: white;
+}
+
+.main-content__game {
+    background-image: url("../../assets/img/backgrounds/background-section-3-2.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.main-content__game-body {
+    padding-top: 200px;
+}
+
+.main-content__game-title {
+    margin: auto;
+    max-width: 900px;
+}
+
+.main-content__game-title>img {
+    width: 100%;
+}
+
+.second-content {
+    min-height: 400px;
+    background-color: #4F5052;
+}
+
+.motorcycle_pvc_listing {
+    padding: 2rem;
+}
+
+.main-content__game-pvp {
+    background-color: #4F5052;
+}
+
+.slide-pvp {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.slider-pvp-img {
+    border-radius: 25px;
+    width: 100%;
+}
+
+.slider-pvp-nav {
+    height: 85px;
+}
+
+.border {
+    border-radius: 25px;
+}
+
+.slider-nav {
+    padding-bottom: 10%;
+}
+
+.main-content__tokens {
+    background-color: #4B535E;
+}
+
+.token-content {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.token-title {
+    width: 60%;
+    height: 100%;
+}
+
+.team-content-body {
+    background-image: url("../../assets/img/elements/team/motor-team.png");
+    background-size: cover;
+    min-height: 600px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.team-title {
+    width: 60%;
+    height: 100%;
+}
+
+.team-content {
+    padding-top: 5%;
+    text-align: center;
+}
+
+.main-content__team {
+    padding-top: 2rem;
+    background-color: #BEBEBE;
+}
+
+.team-image {
+    text-align: center;
+    max-width: 800px;
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+.person-image {
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+.person-image>img {
+    width: 100%;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.person-name {
+    padding-top: 0.5rem;
+}
+
+.person-name>h1 {
+    font-family: 'Futura', Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 800;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.team-content-title>img {
+    width: 30%;
+    height: 60px;
+    padding-bottom: 2rem;
+}
+
+.main-content__footer {
+    background-image: url("../../assets/img/backgrounds/bg-footer.png");
+    background-size: cover;
+    min-height: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    padding-top: 6rem;
+}
+
+.footer-logo>img {
+    width: 100%;
+    height: 250px;
+}
+
+.footer-download {
+    display: flex;
+    gap: 2rem;
+    padding-top: 3rem;
+}
+
+.footer-download>img {
+    width: 100%;
+    height: 80px;
+}
+
+.footer-partners {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.footer-partners>.partners {
+    border-radius: 20px;
+    width: 300px;
+    height: 100px;
+    background-color: white;
+}
