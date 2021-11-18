@@ -362,17 +362,22 @@ h5 {
 .footer-row {
     display: flex;
     justify-content:space-around;
-    padding-top: 2rem;
+    padding-top: 15px;
 }
 
-.footer-row > .col-2 > span {
+.footer-row > .col-2 > a {
     color: #fff;
     font-size: 1.5rem;
     font-weight: 600;
 }
 
+.footer-row > .col-2 > a:hover {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
 .footer-copyright {
-    padding-bottom: 30px;
+    padding-bottom: 25px;
 }
 
 .footer-copyright > span {
@@ -382,7 +387,7 @@ h5 {
     padding-top: 10px;
 }
 
-.footer-row > .col-1 > img {
+.footer-row > .col-1 > a > img {
     width: 40px;
     height: 40px;
     padding-left: 1rem;
