@@ -55,9 +55,9 @@ h5 {
 
 .main-content {
     width: 100%;
-    height: 980px;
-    background-image: url("../../assets/img/backgrounds/background-section1.png");
-    background-position: center;
+    background: url("../../assets/img/backgrounds/background-section1.png") no-repeat center center;
+    background-size: cover;
+    height: 800px;
 }
 
 .main-content__body {
@@ -68,22 +68,22 @@ h5 {
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
-    padding-bottom: 400px;
+    padding-bottom: 150px;
 }
 
 .body__logo>img {
     width: 100%;
-    height: 300px;
+    height: 230px;
 }
 
 .body__title>img {
     width: 100%;
-    height: 50px;
+    height: 40px;
 }
 
 .body__play>a>img {
     width: 100%;
-    height: 90px;
+    height: 70px;
     animation: coracao 1s infinite;
 }
 
@@ -101,14 +101,13 @@ h5 {
 
 .main-content__statistic {
     width: 100%;
-    height: 980px;
-    background-image: url("../../assets/img/backgrounds/background-section2.png");
-    background-position: center;
+    background: url("../../assets/img/backgrounds/background-section2.png") no-repeat center center;
+    background-size: cover;
+    height: 800px;
 }
 
 .main-content__statistic-body {
-    padding-top: 150px;
-    max-width: 1500px;
+    max-width: 780px;
     margin: auto;
 }
 
@@ -131,7 +130,7 @@ h5 {
 
 .statistic-card__sign>img {
     width: 100%;
-    height: 500px;
+    height: 350px;
 }
 
 .statistic-card__results {
@@ -148,22 +147,22 @@ h5 {
 
 .results-1>img {
     width: 100%;
-    height: 150px;
+    height: 105px;
 }
 
 .results-2>img {
     width: 100%;
-    height: 150px;
+    height: 105px;
 }
 
 .results-3>img {
     width: 100%;
-    height: 150px;
+    height: 105px;
 }
 
 .results-4>img {
     width: 100%;
-    height: 150px;
+    height: 105px;
 }
 
 .results-1,
@@ -183,7 +182,7 @@ h5 {
 }
 
 .font-statistic {
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-family: 'Poppins', Helvetica, sans-serif;
     font-weight: 900;
     font-style: italic;
@@ -192,22 +191,20 @@ h5 {
 
 .main-content__game {
     width: 100%;
-    height: 980px;
-    background-image: url("../../assets/img/backgrounds/background-section-3-2.png");
-    background-position: center;
+    background: url("../../assets/img/backgrounds/background-section-3-2.png") no-repeat center center;
+    background-size: cover;
+    height: 800px;
 }
 
-.main-content__game-body {
-    padding-top: 200px;
-}
 
 .main-content__game-title {
     margin: auto;
     max-width: 900px;
+    text-align: center;
 }
 
 .main-content__game-title>img {
-    width: 100%;
+    width: 80%;
 }
 
 .second-content {
@@ -238,7 +235,10 @@ h5 {
 }
 
 .main-content__game-pvp {
-    background-color: #4F5052;
+    width: 100%;
+    background: url("../../assets/img/backgrounds/background-section-4.png") no-repeat center center;
+    background-size: cover;
+    height: 800px;
 }
 
 .slide-pvp {
@@ -271,19 +271,18 @@ h5 {
     padding-top: 5%;
     padding-bottom: 5%;
     text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .token-title {
-    width: 60%;
-    height: 100%;
+    width: 40%;
+    height: 50%;
 }
 
-.team-content-body {
-    background-image: url("../../assets/img/elements/team/motor-team.png");
-    background-size: cover;
-    min-height: 600px;
-    display: flex;
-    justify-content: flex-end;
+.team-content-body > img {
+    width: 100%;
 }
 
 .team-title {
@@ -317,7 +316,7 @@ h5 {
 
 .person-image>img {
     width: 100%;
-    height: 200px;
+    height: 165px;
     border-radius: 50%;
 }
 
@@ -339,14 +338,8 @@ h5 {
     padding-bottom: 4rem;
 }
 
-.main-content__footer {
-    justify-content: space-around;
-    background-image: url("../../assets/img/backgrounds/bg-footer.png");
-    background-size: cover;
-    min-height: 1200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.main-content__footer > img {
+    width: 100%;
 }
 
 .footer {
@@ -402,13 +395,13 @@ h5 {
 
 .footer-logo>img {
     width: 100%;
-    height: 250px;
+    height: 150px;
 }
 
 .footer-download {
     display: flex;
-    gap: 2rem;
-    padding-top: 3.5rem;
+    gap: 1rem;
+    padding-top: 0.5rem;
 }
 
 .footer-download>img {
@@ -458,21 +451,23 @@ h5 {
     left: -150px;
 }
 
+
 .main-content__game-pvp-title {
     margin: auto;
     max-width: 600px;
     padding-top: 2rem;
     padding-bottom: 4rem;
+    text-align: center;
 }
 
 .main-content__game-pvp-title>img {
-    width: 100%;
-    height: 100px;
+    width: 80%;
+    height: 70px;
 }
 
 #carousel {
     position: relative;
-    height: 600px;
+    height: 500px;
     top: 50%;
     overflow: hidden;
 }
@@ -484,7 +479,7 @@ h5 {
 }
 
 #carousel div img {
-    width: 400px;
+    width: 350px;
     transition: width 1s;
 }
 
@@ -495,7 +490,7 @@ h5 {
 }
 
 #carousel div.hideLeft img {
-    width: 200px;
+    width: 150px;
 }
 
 #carousel div.hideRight {
@@ -505,7 +500,7 @@ h5 {
 }
 
 #carousel div.hideRight img {
-    width: 200px;
+    width: 150px;
 }
 
 #carousel div.prev {
@@ -515,7 +510,7 @@ h5 {
 }
 
 #carousel div.prev img {
-    width: 300px;
+    width: 250px;
 }
 
 #carousel div.prevLeftSecond {
@@ -526,7 +521,7 @@ h5 {
 }
 
 #carousel div.prevLeftSecond img {
-    width: 200px;
+    width: 150px;
 }
 
 #carousel div.selected {
@@ -542,7 +537,7 @@ h5 {
 }
 
 #carousel div.next img {
-    width: 300px;
+    width: 250px;
 }
 
 #carousel div.nextRightSecond {
@@ -553,34 +548,34 @@ h5 {
 }
 
 #carousel div.nextRightSecond img {
-    width: 200px;
+    width: 150px;
+}
+
+.desktop {
+    visibility: visible;
+}
+
+.mobile {
+    display: none;
+}
+
+.statistic-card__results:nth-last-child(2){
+    margin-left: -30px;
 }
 
 @media only screen and (max-width: 1380px) {
+    .token-map {
+        width: 100%;
+    }
+
     .main-content {
         height: 650px;
-        background-size: contain;
-        background-repeat: no-repeat;
     }
     .main-content__statistic {
         height: 650px;
-        background-size: contain;
-        background-repeat: no-repeat;
     }
     .main-content__game {
         height: 650px;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    .team-content-body {
-        min-height: 425px;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    .main-content__footer {
-        min-height: 705px;
-        background-size: contain;
-        background-repeat: no-repeat;
     }
     .body__logo>img {
         height: 210px;
@@ -673,20 +668,30 @@ h5 {
 }
 
 @media only screen and (max-width: 485px) {
+
+
+
+    .desktop {
+        display: none;
+    }
+    
+    .mobile {
+        display: block;
+        width: 50px;
+    }
+
+    .token-map {
+        width: 100%;
+    }
+
     .main-content {
         height: 226px;
-        background-size: contain;
-        background-repeat: no-repeat;
     }
     .main-content__statistic {
         height: 226px;
-        background-size: contain;
-        background-repeat: no-repeat;
     }
     .main-content__game {
         height: 226px;
-        background-size: contain;
-        background-repeat: no-repeat;
     }
     .main-content__body {
         max-width: 240px;
@@ -703,20 +708,37 @@ h5 {
         height: 35px;
     }
     .main-content__statistic-body {
+        margin-top: -50px;
         max-width: 240px;
         margin: auto;
         padding-top: 0px;
     }
     .statistic__title {
+        width: 75%;
+        margin: auto;
         padding-top: 2rem;
         padding-bottom: 0rem;
     }
     .statistic-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         padding-top: 1rem;
     }
-    .statistic-card__sign>img {
-        height: 120px;
+    .statistic-card__sign {
+        margin-bottom: 1rem;
     }
+
+    .statistic-card__sign>img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .statistic-card__results:nth-last-child(2){
+        margin-left: 0px;
+    }
+
     .statistic-card__results-content {
         padding-bottom: 0.4rem;
         gap: 1rem;
@@ -740,8 +762,17 @@ h5 {
         font-size: 0.7rem;
     }
     .main-content__game-body {
+        margin-top: -40px;
         padding-top: 95px;
     }
+    .main-content__game-pvp {
+        height: 400px;
+    }
+
+    .token-title {
+        width: 60%;
+    }
+
     .main-content__game-title {
         margin: auto;
         max-width: 300px;
@@ -825,10 +856,6 @@ h5 {
         height: 20px;
         padding-bottom: 2rem;
     }
-    .team-content-body {
-        min-height: 240px;
-        background-size: cover;
-    }
     .team-image {
         gap: 0px;
         max-width: none;
@@ -848,9 +875,6 @@ h5 {
     .person-name>h1 {
         font-size: 15px;
     }
-    .main-content__footer {
-        min-height: 400px;
-    }
     .footer-logo {
         padding-top: 1rem;
     }
@@ -869,9 +893,6 @@ h5 {
     }
     .footer-download>img {
         height: 25px;
-    }
-    .main-content__footer {
-        min-height: 250px;
     }
     .main-content__tokens {
         padding-top: 3rem;
